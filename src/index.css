@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .icons {
+    @apply flex flex-col md:flex-row items-center space-x-3 text-xl;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+.box {
+  background-image: url("https://images.pexels.com/photos/36736/fruits-strawberries-fruit-red.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.box::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.54);
+  inset: 0;
+}
+.box2 {
+  background-image: url("https://images.pexels.com/photos/326082/pexels-photo-326082.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.box2::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 128, 0, 0.484);
+  inset: 0;
+}
+.box3 {
+  background-image: url("https://media.istockphoto.com/photos/cut-fresh-taro-root-picture-id152110540?s=612x612");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.box3::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.54);
+  inset: 0;
+}
+.ads {
+  height: 70vh;
+  background-image: url("https://images.pexels.com/photos/40999/tomatoes-agriculture-antioxidants-bunch-40999.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.ads::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 128, 0, 0.633);
+  inset: 0;
+}
