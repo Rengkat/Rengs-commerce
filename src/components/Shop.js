@@ -8,7 +8,9 @@ function Shop() {
         <div className="absolute inset-0 bg-green-900 opacity-70 "></div>
         <h1 className="font-bold text-4xl text-white z-30">Shop</h1>
       </div>
-      <Products />
+      <div className="w-[90%] mx-auto">
+        <Products />
+      </div>
     </div>
   );
 }

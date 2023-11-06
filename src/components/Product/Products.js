@@ -10,10 +10,10 @@ function Products() {
 
   return (
     <div>
-      <div className="text-center font-bold text-3xl my-10">
+      <div className="text-center font-bold text-3xl my-[5rem]">
         <h1>Most Featured Fresh Fruits</h1>
       </div>
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 gap-y-10 my-5 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2rem] gap-y-10 mb-5 mx-auto">
         {products.map((product) => {
           if (product.categories[0].name === "Fruits") {
             return (
@@ -24,9 +24,9 @@ function Products() {
           }
         })}
       </div>
-      <div className="text-center font-bold text-3xl my-10">
-        <h1>Most Featured Tuber Foods</h1>
-        <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 gap-y-10 my-5 mx-auto">
+      <div className="text-center font-bold text-3xl my-[5rem]">
+        <h1 className="my-[3rem]">Most Featured Tuber Foods</h1>
+        <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2rem] my-5 mx-auto">
           {products.map((product) => {
             if (product.categories[0].name === "Tubers") {
               return (
@@ -39,8 +39,8 @@ function Products() {
         </div>
       </div>
       <div className="text-center font-bold text-3xl my-10">
-        <h1>Most Featured Cereal Crops Foods</h1>
-        <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 gap-y-10 my-5 mx-auto">
+        <h1 className="my-[3rem]">Most Featured Cereal Crops Foods</h1>
+        <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2rem] my-5 mx-auto">
           {products.map((product) => {
             if (product.categories[0].name === "Cerials") {
               return (

@@ -4,7 +4,7 @@
 
 @layer base {
   .icons {
-    @apply flex flex-col md:flex-row items-center space-x-3 text-xl;
+    @apply flex flex-col md:flex-row items-center space-x-3 text-xl text-white;
   }
   html {
     scroll-behavior: smooth;
@@ -20,7 +20,7 @@
 .box::after {
   position: absolute;
   content: "";
-  background-color: rgba(0, 0, 0, 0.54);
+  background-color: #00000070;
   inset: 0;
 }
 .box2 {
@@ -33,7 +33,7 @@
 .box2::after {
   position: absolute;
   content: "";
-  background-color: rgba(0, 128, 0, 0.484);
+  background-color: rgba(0, 128, 0, 0.382);
   inset: 0;
 }
 .box3 {
@@ -60,6 +60,6 @@
 .ads::after {
   position: absolute;
   content: "";
-  background-color: rgba(0, 128, 0, 0.633);
+  background-color: rgba(0, 128, 0, 0.33);
   inset: 0;
 }

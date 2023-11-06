@@ -15,9 +15,7 @@ function Nav() {
         <Link to="/">
           <div className="img flex justify-start items-center mt-2 md:mt-0">
             <img src={logo} alt="Logo" className="w-7 h-7 md:w-10 md:h-10" />
-            <h1 className="font-bold text-2xl md:text-4xl text-green-700">
-              Rengs
-            </h1>
+            <h1 className="font-bold text-2xl md:text-4xl text-green-700">Rengs</h1>
           </div>
         </Link>
         <nav className="mt-3">
@@ -30,9 +28,6 @@ function Nav() {
             </li>
             <li>
               <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
             </li>
           </ul>
           <GiHamburgerMenu
@@ -74,9 +69,7 @@ function Nav() {
                 <FaShoppingCart fontSize={25} className="text-green-700" />
                 {cart.line_items && (
                   <div className="bg-red-500 rounded-full w-5 h-5 p-3 flex justify-center items-center absolute -top-4 left-1">
-                    <h1 className="text-white font-semibold ">
-                      {cart.total_items}
-                    </h1>
+                    <h1 className="text-white font-semibold ">{cart.total_items}</h1>
                   </div>
                 )}
               </Link>
